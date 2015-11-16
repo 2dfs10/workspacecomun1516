@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+  <title>TUTORIAS</title>
+
+ <link href="estilo.css" rel="stylesheet" type="text/css">
+<meta charset="ISO-8859-1">
+  
+</head>
+
+<body>
+
+<div id="cabecera"><h1>TUTORIAS </h1></div>
+<form method="get" action="Insertar" name="formulario">
+	<table border="1" id="mitabla">
+		<tr>
+		<th>MODIFICAR TUTORIA</th>
+		</tr>
+		<tbody>
+		<tr><td>Id Tutoria <input name="id"/></td></tr>
+		<tr><td>Dia&nbsp;&nbsp;<select name='dia' align='rigth'><option>lunes</option><option>martes</option><option>miercoles</option><option>jueves</option><option>viernes</option></select></td></tr>
+		<tr><td>Hora:<input type="radio" name="hora" value="10" checked="checked"/>10:00<input type="radio" name="hora" value="12"/>12:00<input type="radio" name="hora" value="16"/>16:00<input type="radio" name="hora" value="18"/>18:00</td></tr>
+		<tr id='botonAtras'><td><button type="button" onclick="location.href = 'tutorias.html'" >Atras</button>&nbsp;&nbsp;&nbsp;&nbsp;<input name="accion" value="modificartutoria" type="hidden"/><button>Modificar</button></td></tr>
+
+	</tbody>
+	</table>
+	</form>
+	<div id="pie"><p>Copyright © 2013 Felicia Perez. Todos los derechos reservados.</p></div> 

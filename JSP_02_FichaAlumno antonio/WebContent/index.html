@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JSP 02 - Ficha Alumno</title>
+	<style>
+		label {
+			display: inline-block;
+			width: 200px;
+			margin: 5px 0;
+		}
+		input[type=checkbox] + label {width: 50px;}
+	</style>
+</head>
+
+<body>
+	<h3>Ficha Nuevo Alumno</h3>
+	<form action="insertar.jsp" method="post" enctype="multipart/form-data">
+		<label>Apellidos: </label>
+		<input type="text" name="apellidos"/>
+		<br />
+		<label>Nombre: </label>
+		<input type="text" name="nombre"/>
+		<br />
+		<label>Fecha de nacimiento: </label>
+		<input type="text" name="fecha"/>
+		<br />
+		<label>Email: </label>
+		<input type="text" name="mail"/>
+		<br />
+		<label>Asignaturas matriculadas: </label>
+			<input type="checkbox" name="asignaturas" value="DWES"/>
+			<label>DWES</label>
+			<input type="checkbox" name="asignaturas" value="DIW"/>
+			<label>DIW</label>
+			<input type="checkbox" name="asignaturas" value="DAW"/>
+			<label>DAW</label>
+			<input type="checkbox" name="asignaturas" value="DWEC"/>
+			<label>DWEC</label>
+		<br />
+		<label>Fotografía: </label>
+		<input type="file" name="foto" size="50"/>
+		<br />
+		<input type="submit" value="Guardar" />
+	</form>
+	<form action="fichas.jsp">
+		<br />
+		<input type="submit" value="Ver Fichas Alumnos" />
+	</form>
+</body>
+</html>
