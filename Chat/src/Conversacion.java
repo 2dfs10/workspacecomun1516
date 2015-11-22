@@ -1,29 +1,29 @@
 
-
+// desde remoto
 public class Conversacion
 {
   private static final int NMENSAJES = 12;
-  private static String[] conversaci髇 = new String[NMENSAJES];
+  private static String[] conversaci贸n = new String[NMENSAJES];
   
   static
   {
-    // Iniciar la matriz s髄o la primera vez
+    // Iniciar la matriz s贸lo la primera vez
     for (int i = 0; i < NMENSAJES; ++i)
-      conversaci髇[i] = "";
+      conversaci贸n[i] = "";
   }
   
-  public synchronized static void a馻dirMensaje(String mensaje)
+  public synchronized static void a帽adirMensaje(String mensaje)
   {
-    // Conservar en una pila los NMENSAJES 鷏timos
+    // Conservar en una pila los NMENSAJES 煤ltimos
     int i;
-    // A馻dir el 鷏timo mensaje
+    // A帽adir el 煤ltimo mensaje
     for (i = 0; i < NMENSAJES - 1; ++i)
-      conversaci髇[i] = conversaci髇[i+1];
-    conversaci髇[i] = mensaje; // 鷏timo mensaje recibido
+      conversaci贸n[i] = conversaci贸n[i+1];
+    conversaci贸n[i] = mensaje; // 煤ltimo mensaje recibido
   }
   
   public synchronized static String[] obtenerConversacion()
   {
-    return conversaci髇;
+    return conversaci贸n;
   }
 }
